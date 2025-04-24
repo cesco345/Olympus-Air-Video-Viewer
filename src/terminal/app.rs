@@ -1,5 +1,5 @@
 // src/terminal/app.rs
-use crate::terminal::{handlers, image_viewer, state::AppState};
+use crate::terminal::{handlers, image_viewer, state::AppState, video_viewer};
 use anyhow::Result;
 use colored::*;
 use crossterm::{
@@ -150,15 +150,25 @@ impl App {
 
                     if let Some(state) = &self.state {
                         // If we have a state, render the appropriate UI based on mode
-                        if state.mode == crate::terminal::state::AppMode::ViewingImage {
-                            // In image viewer mode, use the image viewer renderer
-                            if let Some(viewer_state) = &state.image_viewer {
-                                // Pass the viewer_state, frame, and area to the render function
-                                image_viewer::renderer::render(viewer_state, f, size);
+                        match state.mode {
+                            crate::terminal::state::AppMode::ViewingImage => {
+                                // In image viewer mode, use the image viewer renderer
+                                if let Some(viewer_state) = &state.image_viewer {
+                                    // Pass the viewer_state, frame, and area to the render function
+                                    image_viewer::renderer::render(viewer_state, f, size);
+                                }
                             }
-                        } else {
-                            // For all other modes, use the main renderer
-                            crate::terminal::renderer::render_app(state, f);
+                            crate::terminal::state::AppMode::ViewingVideo => {
+                                // In video viewer mode, use the video viewer renderer
+                                if let Some(viewer_state) = &state.video_viewer {
+                                    // Pass the viewer_state, frame, and area to the render function
+                                    video_viewer::renderer::render(viewer_state, f, size);
+                                }
+                            }
+                            _ => {
+                                // For all other modes, use the main renderer
+                                crate::terminal::renderer::render_app(state, f);
+                            }
                         }
                     } else {
                         // If we don't have a state, render the offline mode UI

@@ -41,6 +41,7 @@ fn render_title<B: Backend>(state: &AppState, frame: &mut Frame<B>, area: Rect) 
         AppMode::Downloading => "Olympus Camera Control - Download Image",
         AppMode::Deleting => "Olympus Camera Control - Delete Image",
         AppMode::ViewingImage => "Olympus Camera Control - Image Viewer",
+        AppMode::ViewingVideo => "Olympus Camera Control - Video Viewer",
     };
 
     // Create the title paragraph
@@ -64,6 +65,7 @@ fn render_content<B: Backend>(state: &AppState, frame: &mut Frame<B>, area: Rect
         AppMode::Deleting => render_delete_screen(state, frame, area),
         // Don't render anything in viewing mode - this is handled by image_viewer
         AppMode::ViewingImage => {}
+        AppMode::ViewingVideo => {}
     }
 }
 
@@ -73,6 +75,7 @@ fn render_main_menu<B: Backend>(state: &AppState, frame: &mut Frame<B>, area: Re
     let menu_items = vec![
         ListItem::new(Spans::from(Span::raw("Take Photo"))),
         ListItem::new(Spans::from(Span::raw("View Images"))),
+        ListItem::new(Spans::from(Span::raw("Live View"))),
         ListItem::new(Spans::from(Span::raw("Refresh Image List"))),
         ListItem::new(Spans::from(Span::raw("Quit"))),
     ];

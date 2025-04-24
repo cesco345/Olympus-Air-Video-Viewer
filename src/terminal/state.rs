@@ -1,6 +1,7 @@
 // src/terminal/state.rs
 use crate::camera::olympus::OlympusCamera;
 use crate::terminal::image_viewer::state::ImageViewerState;
+use crate::terminal::video_viewer::state::VideoViewerState;
 use anyhow::{Result, anyhow};
 use tempfile::NamedTempFile;
 
@@ -11,7 +12,8 @@ pub enum AppMode {
     ImageList,
     Downloading,
     Deleting,
-    ViewingImage, // New mode for image viewing
+    ViewingImage,
+    ViewingVideo,
 }
 
 /// Application state
@@ -49,6 +51,9 @@ pub struct AppState {
     /// Image viewer state (when in viewing mode)
     pub image_viewer: Option<ImageViewerState>,
 
+    /// Video viewer state (when in video viewing mode)
+    pub video_viewer: Option<VideoViewerState>,
+
     /// Temporary file for image viewing (needed to prevent early deletion)
     pub temp_file: Option<NamedTempFile>,
 }
@@ -77,6 +82,7 @@ impl AppState {
             error_title: String::new(),
             error_message: String::new(),
             image_viewer: None,
+            video_viewer: None,
             temp_file: None,
         })
     }
@@ -189,7 +195,10 @@ impl AppState {
         match self.mode {
             AppMode::Main => 3, // Updated for new menu items
             AppMode::ImageList => self.images.len().saturating_sub(1),
-            AppMode::Downloading | AppMode::Deleting | AppMode::ViewingImage => 0,
+            AppMode::Downloading
+            | AppMode::Deleting
+            | AppMode::ViewingImage
+            | AppMode::ViewingVideo => 0,
         }
     }
 

@@ -1,0 +1,14 @@
+[swscaler @ 0x128018000] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x128018000] [swscaler @ 0x128060000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x128070000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x128080000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x128090000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280a0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280b0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280c0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280d0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280e0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x1280f0000] No accelerated colorspace conversion found from yuv422p to rgba.
+[swscaler @ 0x128018000] [swscaler @ 0x128100000] No accelerated colorspace conversion found from yuv422p to rgba.
+2025-04-24 11:04:38.128 ffplay[30629:17740859] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-24 11:04:38.128 ffplay[30629:17740859] +[IMKInputSession subclass]: chose IMKInputSession_Modern

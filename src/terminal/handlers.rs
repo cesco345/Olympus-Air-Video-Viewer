@@ -1,5 +1,6 @@
 // src/terminal/handlers.rs
 use crate::terminal::state::{AppMode, AppState};
+use crate::terminal::video_viewer;
 use anyhow::Result;
 use crossterm::event::KeyCode;
 use std::{path::Path, thread, time::Duration};
@@ -26,6 +27,9 @@ pub fn handle_input(state: &mut AppState, key: KeyCode) -> Result<bool> {
         AppMode::ViewingImage => {
             crate::terminal::image_viewer::handlers::handle_image_viewer_input(state, key)
         }
+        AppMode::ViewingVideo => {
+            crate::terminal::video_viewer::handlers::handle_video_viewer_input(state, key)
+        }
     }
 }
 
@@ -48,10 +52,24 @@ fn handle_main_input(state: &mut AppState, key: KeyCode) -> Result<bool> {
                     state.set_mode(AppMode::ImageList);
                 }
                 2 => {
+                    // Start live view streaming
+                    state.set_status("Starting live view stream...");
+                    match start_live_view(state) {
+                        Ok(_) => {
+                            state.set_mode(AppMode::ViewingVideo);
+                            state.set_status("Live view stream started");
+                        }
+                        Err(e) => {
+                            state.set_status(&format!("Failed to start live view: {}", e));
+                            log::error!("Failed to start live view: {}", e);
+                        }
+                    }
+                }
+                3 => {
                     state.set_status("Refreshing image count...");
                     state.refresh_images()?;
                 }
-                3 => {
+                4 => {
                     return Ok(true); // Signal to quit
                 }
                 _ => {}
@@ -275,6 +293,13 @@ fn take_photo_with_warmup(state: &mut AppState) -> Result<()> {
     state.camera.take_photo()?;
     state.refresh_images()?;
     state.set_status("Photo captured successfully");
+    Ok(())
+}
+
+/// Start the live view video stream
+fn start_live_view(state: &mut AppState) -> Result<()> {
+    // Create the video viewer and start the live stream
+    video_viewer::handlers::create_live_view(state)?;
     Ok(())
 }
 
