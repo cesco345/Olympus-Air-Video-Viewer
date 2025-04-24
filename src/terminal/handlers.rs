@@ -288,8 +288,6 @@ fn show_delete_error_dialog(state: &mut AppState) {
 
 /// Take a photo with warm-up
 fn take_photo_with_warmup(state: &mut AppState) -> Result<()> {
-    // Your olympus.rs implementation already includes warm-up functionality
-    // in the take_photo() method, so we can just call that
     state.camera.take_photo()?;
     state.refresh_images()?;
     state.set_status("Photo captured successfully");

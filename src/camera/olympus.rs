@@ -7,7 +7,7 @@ use std::fs;
 use std::io::Write;
 use std::path::Path;
 use std::thread;
-use std::time::Duration; // Add this for file writing
+use std::time::Duration;
 
 /// Main camera client for Olympus Air
 pub struct OlympusCamera {
@@ -38,7 +38,7 @@ impl OlympusCamera {
     pub fn connect(&self) -> Result<()> {
         info!("Connecting to camera...");
 
-        // Simple initialization sequence from the working warm_up_photo.rs
+        // Simple initialization sequence
         let steps = [
             "get_connectmode.cgi",
             "switch_cameramode.cgi?mode=rec",
@@ -140,7 +140,7 @@ impl OlympusCamera {
             .header("content-length", "4096")
             .send()?;
 
-        // Log but don't check status (matching working code behavior)
+        // Log but don't check status
         info!("Photo command sent with status: {}", response.status());
 
         Ok(())
@@ -161,7 +161,7 @@ impl OlympusCamera {
 
         let text = response.text()?;
 
-        // Use both regex patterns to find all image files (matching working code)
+        // Use both regex patterns to find all image files
         let re1 = Regex::new(r"P\w\d+\.JPG").unwrap();
         let re2 = Regex::new(r"P.\d+\.JPG").unwrap();
 
@@ -192,7 +192,7 @@ impl OlympusCamera {
             .header("content-length", "4096")
             .send()?;
 
-        // Log but don't validate status code (matching working code behavior)
+        // Log but don't validate status code
         info!("Response status: {}", response.status());
         Ok(())
     }

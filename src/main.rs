@@ -31,7 +31,7 @@ fn main() {
     );
     println!(
         "{}",
-        "║     OLYMPUS CAMERA TERMINAL CONTROL    ║"
+        "║  OLYMPUS AIR CAMERA AND VIDEO CONTROL  ║"
             .bright_cyan()
             .bold()
     );

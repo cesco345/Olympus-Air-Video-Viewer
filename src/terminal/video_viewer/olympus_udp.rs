@@ -439,7 +439,7 @@ fn process_udp_stream(
                             | ((buffer[6] as u32) << 8)
                             | (buffer[7] as u32);
 
-                        // First packet of frame (matches Python implementation)
+                        // First packet of frame
                         if v == 2 && p == 0 && x == 1 && m == 0 && pt == 96 && !first_frame_received
                         {
                             debug!("First packet of frame received, frame ID: {}", frame_seq);
