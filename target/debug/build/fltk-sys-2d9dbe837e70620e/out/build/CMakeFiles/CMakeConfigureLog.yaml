@@ -1,0 +1,1454 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Darwin - 24.3.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;--target=arm64-apple-macosx;-mmacosx-version-min=15.2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/3.31.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: -ffunction-sections;-fdata-sections;-fPIC;--target=arm64-apple-macosx;-mmacosx-version-min=15.2
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/3.31.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e63a3/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e63a3.dir/build.make CMakeFiles/cmTC_e63a3.dir/build
+        Building C object CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macosx
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_e63a3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e63a3.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macosx
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e63a3 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -o cmTC_e63a3
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : "arm64"
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e63a3/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_e63a3.dir/build.make CMakeFiles/cmTC_e63a3.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macosx]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qTr8gi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_e63a3]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e63a3.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macosx]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_e63a3 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.2.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e63a3] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e63a3.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the C compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d8159/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d8159.dir/build.make CMakeFiles/cmTC_d8159.dir/build
+        Building CXX object CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macosx
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_d8159
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8159.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-macosx
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d8159 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d8159
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : "arm64"
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d8159/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d8159.dir/build.make CMakeFiles/cmTC_d8159.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macosx]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.2.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-fMdmvE -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.3.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_d8159]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8159.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-macosx]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.2.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d8159 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.2.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d8159] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_d8159.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/setup.cmake:124 (try_compile)"
+      - "fltk/CMake/setup.cmake:146 (CHECK_OSX_MAX_ALLOWED)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CHECK_OSX_MAX_ALLOWED_150000/CMakeFiles/CMakeTmp"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CHECK_OSX_MAX_ALLOWED_150000/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "FLTK_CHECK_OSX_MAX_ALLOWED_150000"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CHECK_OSX_MAX_ALLOWED_150000/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0d9ff/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0d9ff.dir/build.make CMakeFiles/cmTC_0d9ff.dir/build
+        Building C object CMakeFiles/cmTC_0d9ff.dir/macOSMaxAllowed.c.o
+        /usr/bin/cc -DSDK_VERSION_CHECK=150000  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_0d9ff.dir/macOSMaxAllowed.c.o -MF CMakeFiles/cmTC_0d9ff.dir/macOSMaxAllowed.c.o.d -o CMakeFiles/cmTC_0d9ff.dir/macOSMaxAllowed.c.o -c /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake/macOSMaxAllowed.c
+        Linking C executable cmTC_0d9ff
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d9ff.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0d9ff.dir/macOSMaxAllowed.c.o -o cmTC_0d9ff
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "fltk/CMake/setup.cmake:186 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-1TdnSt"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-1TdnSt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-1TdnSt'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_78431/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_78431.dir/build.make CMakeFiles/cmTC_78431.dir/build
+        Building C object CMakeFiles/cmTC_78431.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_78431.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_78431.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_78431.dir/CheckIncludeFile.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-1TdnSt/CheckIncludeFile.c
+        Linking C executable cmTC_78431
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78431.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_78431.dir/CheckIncludeFile.c.o -o cmTC_78431
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "fltk/CMake/setup.cmake:186 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eqwHJa"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eqwHJa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eqwHJa'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7b861/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7b861.dir/build.make CMakeFiles/cmTC_7b861.dir/build
+        Building C object CMakeFiles/cmTC_7b861.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_7b861.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_7b861.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_7b861.dir/CheckIncludeFile.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eqwHJa/CheckIncludeFile.c
+        Linking C executable cmTC_7b861
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b861.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7b861.dir/CheckIncludeFile.c.o -o cmTC_7b861
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "fltk/CMake/setup.cmake:186 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-y3kGCE"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-y3kGCE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-y3kGCE'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dad11/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dad11.dir/build.make CMakeFiles/cmTC_dad11.dir/build
+        Building C object CMakeFiles/cmTC_dad11.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_dad11.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_dad11.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_dad11.dir/CheckIncludeFile.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-y3kGCE/CheckIncludeFile.c
+        Linking C executable cmTC_dad11
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dad11.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dad11.dir/CheckIncludeFile.c.o -o cmTC_dad11
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:186 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Xv1kUo"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Xv1kUo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_SHORT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Xv1kUo'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0381c/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0381c.dir/build.make CMakeFiles/cmTC_0381c.dir/build
+        Building C object CMakeFiles/cmTC_0381c.dir/SIZEOF_SHORT.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_0381c.dir/SIZEOF_SHORT.c.o -MF CMakeFiles/cmTC_0381c.dir/SIZEOF_SHORT.c.o.d -o CMakeFiles/cmTC_0381c.dir/SIZEOF_SHORT.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Xv1kUo/SIZEOF_SHORT.c
+        Linking C executable cmTC_0381c
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0381c.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0381c.dir/SIZEOF_SHORT.c.o -o cmTC_0381c
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:187 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-XLrzuS"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-XLrzuS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_INT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-XLrzuS'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_146d5/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_146d5.dir/build.make CMakeFiles/cmTC_146d5.dir/build
+        Building C object CMakeFiles/cmTC_146d5.dir/SIZEOF_INT.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_146d5.dir/SIZEOF_INT.c.o -MF CMakeFiles/cmTC_146d5.dir/SIZEOF_INT.c.o.d -o CMakeFiles/cmTC_146d5.dir/SIZEOF_INT.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-XLrzuS/SIZEOF_INT.c
+        Linking C executable cmTC_146d5
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_146d5.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_146d5.dir/SIZEOF_INT.c.o -o cmTC_146d5
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:188 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-kbfJdb"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-kbfJdb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SIZEOF_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-kbfJdb'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a8001/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a8001.dir/build.make CMakeFiles/cmTC_a8001.dir/build
+        Building C object CMakeFiles/cmTC_a8001.dir/SIZEOF_LONG.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_a8001.dir/SIZEOF_LONG.c.o -MF CMakeFiles/cmTC_a8001.dir/SIZEOF_LONG.c.o.d -o CMakeFiles/cmTC_a8001.dir/SIZEOF_LONG.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-kbfJdb/SIZEOF_LONG.c
+        Linking C executable cmTC_a8001
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8001.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a8001.dir/SIZEOF_LONG.c.o -o cmTC_a8001
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "fltk/CMake/setup.cmake:189 (CHECK_TYPE_SIZE)"
+      - "fltk/CMakeLists.txt:68 (include)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-WtGtLQ"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-WtGtLQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_HAVE_LONG_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-WtGtLQ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ab659/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ab659.dir/build.make CMakeFiles/cmTC_ab659.dir/build
+        Building C object CMakeFiles/cmTC_ab659.dir/HAVE_LONG_LONG.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ab659.dir/HAVE_LONG_LONG.c.o -MF CMakeFiles/cmTC_ab659.dir/HAVE_LONG_LONG.c.o.d -o CMakeFiles/cmTC_ab659.dir/HAVE_LONG_LONG.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-WtGtLQ/HAVE_LONG_LONG.c
+        Linking C executable cmTC_ab659
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab659.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ab659.dir/HAVE_LONG_LONG.c.o -o cmTC_ab659
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:127 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-oQAd0n"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-oQAd0n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_ALSA_ASOUNDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-oQAd0n'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_17c94/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_17c94.dir/build.make CMakeFiles/cmTC_17c94.dir/build
+        Building C object CMakeFiles/cmTC_17c94.dir/HAVE_ALSA_ASOUNDLIB_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_17c94.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -MF CMakeFiles/cmTC_17c94.dir/HAVE_ALSA_ASOUNDLIB_H.c.o.d -o CMakeFiles/cmTC_17c94.dir/HAVE_ALSA_ASOUNDLIB_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-oQAd0n/HAVE_ALSA_ASOUNDLIB_H.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-oQAd0n/HAVE_ALSA_ASOUNDLIB_H.c:2:10: fatal error: 'alsa/asoundlib.h' file not found
+            2 | #include <alsa/asoundlib.h>
+              |          ^~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_17c94.dir/HAVE_ALSA_ASOUNDLIB_H.c.o] Error 1
+        make: *** [cmTC_17c94/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:128 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-OFsEMp"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-OFsEMp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-OFsEMp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98530/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_98530.dir/build.make CMakeFiles/cmTC_98530.dir/build
+        Building C object CMakeFiles/cmTC_98530.dir/HAVE_DLFCN_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_98530.dir/HAVE_DLFCN_H.c.o -MF CMakeFiles/cmTC_98530.dir/HAVE_DLFCN_H.c.o.d -o CMakeFiles/cmTC_98530.dir/HAVE_DLFCN_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-OFsEMp/HAVE_DLFCN_H.c
+        Linking C executable cmTC_98530
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98530.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_98530.dir/HAVE_DLFCN_H.c.o -o cmTC_98530
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:129 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-El2XGt"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-El2XGt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_GL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-El2XGt'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_415c3/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_415c3.dir/build.make CMakeFiles/cmTC_415c3.dir/build
+        Building C object CMakeFiles/cmTC_415c3.dir/HAVE_GL_GLU_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_415c3.dir/HAVE_GL_GLU_H.c.o -MF CMakeFiles/cmTC_415c3.dir/HAVE_GL_GLU_H.c.o.d -o CMakeFiles/cmTC_415c3.dir/HAVE_GL_GLU_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-El2XGt/HAVE_GL_GLU_H.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-El2XGt/HAVE_GL_GLU_H.c:2:10: fatal error: 'GL/glu.h' file not found
+            2 | #include <GL/glu.h>
+              |          ^~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_415c3.dir/HAVE_GL_GLU_H.c.o] Error 1
+        make: *** [cmTC_415c3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:130 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Zj84BT"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Zj84BT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_LOCALE_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Zj84BT'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f0e82/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f0e82.dir/build.make CMakeFiles/cmTC_f0e82.dir/build
+        Building C object CMakeFiles/cmTC_f0e82.dir/HAVE_LOCALE_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_f0e82.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_f0e82.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_f0e82.dir/HAVE_LOCALE_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-Zj84BT/HAVE_LOCALE_H.c
+        Linking C executable cmTC_f0e82
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0e82.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f0e82.dir/HAVE_LOCALE_H.c.o -o cmTC_f0e82
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:131 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eoCfJu"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eoCfJu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_OPENGL_GLU_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eoCfJu'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32d79/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_32d79.dir/build.make CMakeFiles/cmTC_32d79.dir/build
+        Building C object CMakeFiles/cmTC_32d79.dir/HAVE_OPENGL_GLU_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_32d79.dir/HAVE_OPENGL_GLU_H.c.o -MF CMakeFiles/cmTC_32d79.dir/HAVE_OPENGL_GLU_H.c.o.d -o CMakeFiles/cmTC_32d79.dir/HAVE_OPENGL_GLU_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eoCfJu/HAVE_OPENGL_GLU_H.c
+        Linking C executable cmTC_32d79
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32d79.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_32d79.dir/HAVE_OPENGL_GLU_H.c.o -o cmTC_32d79
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:132 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-SDA8RP"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-SDA8RP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STDIO_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-SDA8RP'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec777/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ec777.dir/build.make CMakeFiles/cmTC_ec777.dir/build
+        Building C object CMakeFiles/cmTC_ec777.dir/HAVE_STDIO_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_ec777.dir/HAVE_STDIO_H.c.o -MF CMakeFiles/cmTC_ec777.dir/HAVE_STDIO_H.c.o.d -o CMakeFiles/cmTC_ec777.dir/HAVE_STDIO_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-SDA8RP/HAVE_STDIO_H.c
+        Linking C executable cmTC_ec777
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec777.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ec777.dir/HAVE_STDIO_H.c.o -o cmTC_ec777
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:133 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-S2xu4k"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-S2xu4k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-S2xu4k'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a4d9f/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a4d9f.dir/build.make CMakeFiles/cmTC_a4d9f.dir/build
+        Building C object CMakeFiles/cmTC_a4d9f.dir/HAVE_STRINGS_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_a4d9f.dir/HAVE_STRINGS_H.c.o -MF CMakeFiles/cmTC_a4d9f.dir/HAVE_STRINGS_H.c.o.d -o CMakeFiles/cmTC_a4d9f.dir/HAVE_STRINGS_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-S2xu4k/HAVE_STRINGS_H.c
+        Linking C executable cmTC_a4d9f
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4d9f.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a4d9f.dir/HAVE_STRINGS_H.c.o -o cmTC_a4d9f
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:134 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-hZkW7z"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-hZkW7z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SYS_SELECT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-hZkW7z'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3936e/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3936e.dir/build.make CMakeFiles/cmTC_3936e.dir/build
+        Building C object CMakeFiles/cmTC_3936e.dir/HAVE_SYS_SELECT_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_3936e.dir/HAVE_SYS_SELECT_H.c.o -MF CMakeFiles/cmTC_3936e.dir/HAVE_SYS_SELECT_H.c.o.d -o CMakeFiles/cmTC_3936e.dir/HAVE_SYS_SELECT_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-hZkW7z/HAVE_SYS_SELECT_H.c
+        Linking C executable cmTC_3936e
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3936e.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3936e.dir/HAVE_SYS_SELECT_H.c.o -o cmTC_3936e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:135 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-i9g7BK"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-i9g7BK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SYS_STDTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-i9g7BK'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_69d53/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_69d53.dir/build.make CMakeFiles/cmTC_69d53.dir/build
+        Building C object CMakeFiles/cmTC_69d53.dir/HAVE_SYS_STDTYPES_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_69d53.dir/HAVE_SYS_STDTYPES_H.c.o -MF CMakeFiles/cmTC_69d53.dir/HAVE_SYS_STDTYPES_H.c.o.d -o CMakeFiles/cmTC_69d53.dir/HAVE_SYS_STDTYPES_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-i9g7BK/HAVE_SYS_STDTYPES_H.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-i9g7BK/HAVE_SYS_STDTYPES_H.c:2:10: fatal error: 'sys/stdtypes.h' file not found
+            2 | #include <sys/stdtypes.h>
+              |          ^~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_69d53.dir/HAVE_SYS_STDTYPES_H.c.o] Error 1
+        make: *** [cmTC_69d53/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:137 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NnRpGB"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NnRpGB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_X11_XREGION_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NnRpGB'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c91c7/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c91c7.dir/build.make CMakeFiles/cmTC_c91c7.dir/build
+        Building C object CMakeFiles/cmTC_c91c7.dir/HAVE_X11_XREGION_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_c91c7.dir/HAVE_X11_XREGION_H.c.o -MF CMakeFiles/cmTC_c91c7.dir/HAVE_X11_XREGION_H.c.o.d -o CMakeFiles/cmTC_c91c7.dir/HAVE_X11_XREGION_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NnRpGB/HAVE_X11_XREGION_H.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NnRpGB/HAVE_X11_XREGION_H.c:2:10: fatal error: 'X11/Xlib.h' file not found
+            2 | #include <X11/Xlib.h>
+              |          ^~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_c91c7.dir/HAVE_X11_XREGION_H.c.o] Error 1
+        make: *** [cmTC_c91c7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "fltk/CMake/resources.cmake:34 (check_include_files)"
+      - "fltk/CMake/resources.cmake:143 (fl_find_header)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-zPow8v"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-zPow8v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-zPow8v'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f9f9e/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f9f9e.dir/build.make CMakeFiles/cmTC_f9f9e.dir/build
+        Building C object CMakeFiles/cmTC_f9f9e.dir/HAVE_PTHREAD_H.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_f9f9e.dir/HAVE_PTHREAD_H.c.o -MF CMakeFiles/cmTC_f9f9e.dir/HAVE_PTHREAD_H.c.o.d -o CMakeFiles/cmTC_f9f9e.dir/HAVE_PTHREAD_H.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-zPow8v/HAVE_PTHREAD_H.c
+        Linking C executable cmTC_f9f9e
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9f9e.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f9f9e.dir/HAVE_PTHREAD_H.c.o -o cmTC_f9f9e
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:149 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_RECURSIVE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1fe62/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1fe62.dir/build.make CMakeFiles/cmTC_1fe62.dir/build
+        Building C object CMakeFiles/cmTC_1fe62.dir/pthread_mutex_recursive.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_1fe62.dir/pthread_mutex_recursive.c.o -MF CMakeFiles/cmTC_1fe62.dir/pthread_mutex_recursive.c.o.d -o CMakeFiles/cmTC_1fe62.dir/pthread_mutex_recursive.c.o -c /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake/pthread_mutex_recursive.c
+        Linking C executable cmTC_1fe62
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fe62.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1fe62.dir/pthread_mutex_recursive.c.o -o cmTC_1fe62
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:257 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-coeE5e"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-coeE5e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_DLSYM"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-coeE5e'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_81431/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_81431.dir/build.make CMakeFiles/cmTC_81431.dir/build
+        Building C object CMakeFiles/cmTC_81431.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_81431.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_81431.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_81431.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-coeE5e/CheckSymbolExists.c
+        Linking C executable cmTC_81431
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81431.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_81431.dir/CheckSymbolExists.c.o -o cmTC_81431
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:260 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NPtmKz"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NPtmKz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_LOCALECONV"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NPtmKz'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dcf96/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_dcf96.dir/build.make CMakeFiles/cmTC_dcf96.dir/build
+        Building C object CMakeFiles/cmTC_dcf96.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_dcf96.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_dcf96.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_dcf96.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-NPtmKz/CheckSymbolExists.c
+        Linking C executable cmTC_dcf96
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcf96.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_dcf96.dir/CheckSymbolExists.c.o -o cmTC_dcf96
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:264 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-sTuFqL"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-sTuFqL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_PNG_GET_VALID"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-sTuFqL'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9e0f8/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9e0f8.dir/build.make CMakeFiles/cmTC_9e0f8.dir/build
+        Building C object CMakeFiles/cmTC_9e0f8.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_9e0f8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_9e0f8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_9e0f8.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-sTuFqL/CheckSymbolExists.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-sTuFqL/CheckSymbolExists.c:2:10: fatal error: 'png.h' file not found
+            2 | #include <png.h>
+              |          ^~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_9e0f8.dir/CheckSymbolExists.c.o] Error 1
+        make: *** [cmTC_9e0f8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:265 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-czaCNW"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-czaCNW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_PNG_SET_TRNS_TO_ALPHA"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-czaCNW'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_67317/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_67317.dir/build.make CMakeFiles/cmTC_67317.dir/build
+        Building C object CMakeFiles/cmTC_67317.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_67317.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_67317.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_67317.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-czaCNW/CheckSymbolExists.c
+        /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-czaCNW/CheckSymbolExists.c:2:10: fatal error: 'png.h' file not found
+            2 | #include <png.h>
+              |          ^~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_67317.dir/CheckSymbolExists.c.o] Error 1
+        make: *** [cmTC_67317/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:279 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qa1r0E"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qa1r0E"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STRLCAT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qa1r0E'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cbde6/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cbde6.dir/build.make CMakeFiles/cmTC_cbde6.dir/build
+        Building C object CMakeFiles/cmTC_cbde6.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_cbde6.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cbde6.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cbde6.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-qa1r0E/CheckSymbolExists.c
+        Linking C executable cmTC_cbde6
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbde6.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cbde6.dir/CheckSymbolExists.c.o -o cmTC_cbde6
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:280 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-JNATTm"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-JNATTm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_STRLCPY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-JNATTm'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98172/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_98172.dir/build.make CMakeFiles/cmTC_98172.dir/build
+        Building C object CMakeFiles/cmTC_98172.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_98172.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_98172.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_98172.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-JNATTm/CheckSymbolExists.c
+        Linking C executable cmTC_98172
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98172.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_98172.dir/CheckSymbolExists.c.o -o cmTC_98172
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:283 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-u94ChY"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-u94ChY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_SETENV"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-u94ChY'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c7aed/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c7aed.dir/build.make CMakeFiles/cmTC_c7aed.dir/build
+        Building C object CMakeFiles/cmTC_c7aed.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_c7aed.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_c7aed.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_c7aed.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-u94ChY/CheckSymbolExists.c
+        Linking C executable cmTC_c7aed
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7aed.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c7aed.dir/CheckSymbolExists.c.o -o cmTC_c7aed
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "fltk/CMake/resources.cmake:290 (check_symbol_exists)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-5w6qCX"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-5w6qCX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "HAVE_TRUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-5w6qCX'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b4fe/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1b4fe.dir/build.make CMakeFiles/cmTC_1b4fe.dir/build
+        Building C object CMakeFiles/cmTC_1b4fe.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_1b4fe.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_1b4fe.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_1b4fe.dir/CheckSymbolExists.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-5w6qCX/CheckSymbolExists.c
+        Linking C executable cmTC_1b4fe
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b4fe.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_1b4fe.dir/CheckSymbolExists.c.o -o cmTC_1b4fe  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/libm.tbd
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "fltk/CMake/resources.cmake:297 (try_compile)"
+      - "fltk/CMakeLists.txt:73 (include)"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2 -fno-exceptions -Wno-deprecated"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "V"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/fltk/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a39a4/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_a39a4.dir/build.make CMakeFiles/cmTC_a39a4.dir/build
+        Building CXX object CMakeFiles/cmTC_a39a4.dir/posixScandir.cxx.o
+        /usr/bin/c++   -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2 -fno-exceptions -Wno-deprecated  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_a39a4.dir/posixScandir.cxx.o -MF CMakeFiles/cmTC_a39a4.dir/posixScandir.cxx.o.d -o CMakeFiles/cmTC_a39a4.dir/posixScandir.cxx.o -c /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake/posixScandir.cxx
+        Linking CXX executable cmTC_a39a4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a39a4.dir/link.txt --verbose=1
+        /usr/bin/c++  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2 -fno-exceptions -Wno-deprecated  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a39a4.dir/posixScandir.cxx.o -o cmTC_a39a4
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "fltk/CMake/options.cmake:746 (include)"
+      - "fltk/CMakeLists.txt:78 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eOzaJ1"
+      binary: "/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eOzaJ1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/CMake"
+      CMAKE_OSX_ARCHITECTURES: "arm64"
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eOzaJ1'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9718c/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_9718c.dir/build.make CMakeFiles/cmTC_9718c.dir/build
+        Building C object CMakeFiles/cmTC_9718c.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -MD -MT CMakeFiles/cmTC_9718c.dir/src.c.o -MF CMakeFiles/cmTC_9718c.dir/src.c.o.d -o CMakeFiles/cmTC_9718c.dir/src.c.o -c /Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out/build/CMakeFiles/CMakeScratch/TryCompile-eOzaJ1/src.c
+        Linking C executable cmTC_9718c
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9718c.dir/link.txt --verbose=1
+        /usr/bin/cc  -ffunction-sections -fdata-sections -fPIC --target=arm64-apple-macosx -mmacosx-version-min=15.2  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_9718c.dir/src.c.o -o cmTC_9718c
+        
+      exitCode: 0
+...

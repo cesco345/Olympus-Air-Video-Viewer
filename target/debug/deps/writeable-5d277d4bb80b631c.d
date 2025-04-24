@@ -1,0 +1,11 @@
+/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/deps/libwriteable-5d277d4bb80b631c.rmeta: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/cmp.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/impls.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/ops.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/parts_write_adapter.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/testing.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/try_writeable.rs
+
+/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/deps/writeable-5d277d4bb80b631c.d: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/lib.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/cmp.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/impls.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/ops.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/parts_write_adapter.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/testing.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/try_writeable.rs
+
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/lib.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/cmp.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/impls.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/ops.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/parts_write_adapter.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/testing.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/writeable-0.5.5/src/try_writeable.rs:

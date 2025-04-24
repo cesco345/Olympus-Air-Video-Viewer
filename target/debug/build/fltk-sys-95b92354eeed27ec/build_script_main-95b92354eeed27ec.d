@@ -1,0 +1,12 @@
+/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-95b92354eeed27ec/build_script_main-95b92354eeed27ec: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/main.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/android.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/bundled.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/emscripten.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/link.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/pkg_config.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/source.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/utils.rs
+
+/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-95b92354eeed27ec/build_script_main-95b92354eeed27ec.d: /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/main.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/android.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/bundled.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/emscripten.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/link.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/pkg_config.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/source.rs /Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/utils.rs
+
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/main.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/android.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/bundled.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/emscripten.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/link.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/pkg_config.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/source.rs:
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/build/utils.rs:

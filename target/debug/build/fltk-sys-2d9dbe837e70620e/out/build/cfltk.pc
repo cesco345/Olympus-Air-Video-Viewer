@@ -1,0 +1,15 @@
+prefix="/Users/dev/Desktop/Rust/simple_olympus_camera/target/debug/build/fltk-sys-2d9dbe837e70620e/out"
+exec_prefix="${prefix}"
+libdir="${prefix}/lib"
+includedir="${prefix}/include"
+
+Name: cfltk
+Description: C Bindings for FLTK
+URL: https://github.com/MoAlyousef/cfltk
+Version: 1.5.7
+
+Requires:
+Requires.private: 
+Cflags: -I"${includedir}" 
+Libs: -L"${libdir}" -lcfltk
+Libs.private: -L"${libdir}" -lcfltk -lfltk -lfltk_images -lfltk_z -lfltk_jpeg -lfltk_png -framework Cocoa -framework Carbon -framework ApplicationServices -framework OpenGL -lc++abi

@@ -1,0 +1,22 @@
+
+
+
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_ASM_COMPILER
+    CMAKE_ASM_FLAGS
+    OpenGL_GL_PREFERENCE
+
+
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/src/cfl_prefs.cpp:25:16: warning: 'Fl_Preferences' is deprecated: since 1.4.0 - use Fl_Preferences(path, vendor, application, flags) instead [-Wdeprecated-declarations]
+   25 |     return new Fl_Preferences(path, vendor, application);
+      |                ^
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/FL/Fl_Preferences.H:206:3: note: 'Fl_Preferences' has been explicitly marked deprecated here
+  206 |   FL_DEPRECATED("since 1.4.0 - use Fl_Preferences(path, vendor, application, flags) instead",
+      |   ^
+/Users/dev/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fltk-sys-1.5.7/cfltk/fltk/FL/fl_attr.h:136:36: note: expanded from macro 'FL_DEPRECATED'
+  136 | #define FL_DEPRECATED(msg, func) [[deprecated(msg)]] func
+      |                                    ^
+1 warning generated.
