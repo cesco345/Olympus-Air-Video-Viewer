@@ -2,9 +2,10 @@
 
 A robust terminal-based application for controlling Olympus cameras over WiFi. This application provides a comprehensive suite of tools to take photos, download images, view and manage your camera remotely through an intuitive terminal interface.
 
-![Olympus Camera Controller](docs/screenshot.png)
-
+📺 **[Click on the image below to watch my YouTube tutorial]**
 [![Olympus Air Desktop Control Application](docs/olympus.jpg)](https://youtu.be/03hyN6ijSd4?feature=shared "Control Your Olympus Air: Building a Desktop Application for Advanced Camera Control")
+
+![Olympus Camera Controller](docs/screenshot.png)
 
 ## Features
 
