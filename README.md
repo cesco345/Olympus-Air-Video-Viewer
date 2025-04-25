@@ -1,107 +1,135 @@
 # Olympus Air Camera Terminal Viewer
 
-A terminal-based application for controlling Olympus cameras over WiFi. This application allows you to take photos, download images, view images directly from the camera, live view through the Olympus Air camera, and manage your camera remotely using a clean terminal interface.
+A robust terminal-based application for controlling Olympus cameras over WiFi. This application provides a comprehensive suite of tools to take photos, download images, view and manage your camera remotely through an intuitive terminal interface.
 
 ![Olympus Camera Controller](docs/screenshot.png)
 
 ## Features
 
-- Connect to Olympus cameras over WiFi
-- Take photos with warm-up sequence
-- Browse images stored on the camera
-- View images directly on the camera without downloading
-- Live view from Olympus Air camera using `mplayer`
+- Connect to Olympus cameras over WiFi with enhanced connection reliability
+- Take photos with optimized warm-up sequence for better results
+- Browse images stored on the camera with pagination and fast navigation
+- View images directly on the camera without downloading, with multiple display methods
+- Live view from Olympus Air camera with high-performance streaming
 - Record live video directly from camera stream
-- Download images to your computer
+- Download images to your computer with progress tracking
 - Delete images (on supported models)
-- Offline mode with reconnection capability
-- Responsive terminal UI with pagination
+- Offline mode with robust reconnection capability
+- Responsive terminal UI with intuitive navigation
+- Comprehensive error handling and diagnostics
 
-## New Image Viewing Functionality
+## Recent Improvements
 
-The latest addition to the application allows users to preview images directly from the camera's SD card over WiFi before downloading them. This feature provides several advantages:
+### Modular Architecture
 
-### Benefits of Wireless Image Viewing
+The codebase has been refactored into a modular, trait-based architecture that improves maintainability and extensibility:
 
-- **Immediate Feedback**: View and evaluate images without removing the SD card or connecting cables
-- **Field Review**: Review images while still on location to ensure you've captured what you need
-- **Efficient Workflow**: Quickly browse through images and only download those worth keeping
-- **Bandwidth Efficiency**: Preview using optimized data transfer instead of downloading full-resolution files
-- **Battery Preservation**: Less demanding on both camera and device batteries compared to transferring full images
+- **Client Module**: Handles all HTTP operations with enhanced error recovery
+- **Connection Module**: Manages camera connection with automatic retries and backoff
+- **Image Module**: Provides robust image operations (listing, downloading, deletion)
+- **Photo Module**: Controls photo capture with warm-up sequence
 
-### Technical Details
+### Enhanced Image Viewing
 
-- **Resolution**: While previewed images are displayed at a lower resolution than the originals (limited by terminal capabilities), they provide sufficient detail for evaluation purposes
+Our improved image viewing system now supports multiple URL formats for maximum compatibility with different Olympus camera models:
+
+- **Auto-detection**: Automatically detects which URL format works with your specific camera
+- **Error Recovery**: Gracefully handles 404/520 errors by trying alternative formats
+- **High Resolution**: Option to load higher resolution versions of images
+- **Cache Management**: Efficient caching system to improve performance
+
+### Diagnostic Tools
+
+The application now includes powerful diagnostic capabilities:
+
+- **API Explorer**: Systematically tests different camera endpoints to identify supported features
+- **Enhanced Logging**: Comprehensive logging system with emoji indicators for better readability
+- **URL Format Testing**: Tests multiple URL formats to determine what works with your camera
+- **Connection Analysis**: Provides detailed information about connection quality and status
+
+### Live View Performance
+
+The live view streaming has been optimized for higher performance:
+
+- **Improved Buffer Management**: Optimized buffer allocation for smoother video
+- **Enhanced Frame Processing**: Better RTP protocol handling for more reliable streaming
+- **Adaptive Frame Rate**: Dynamically adjusts frame processing based on system capabilities
+- **Robust Error Recovery**: Automatically recovers from streaming disruptions
+- **Player Integration**: Better integration with external players (MPlayer/FFplay)
+
+## Technical Details
+
+### Wireless Image Viewing
+
+- **Resolution Options**: Low, medium, and high resolution options to balance quality and speed
 - **Multiple Display Methods**: Support for various terminal image display methods (iTerm2, Kitty, SIXEL, etc.)
-- **Zoom Functionality**: Adjust the zoom level to see more or less detail
+- **Zoom Functionality**: Dynamically adjust zoom level with real-time feedback
 - **Cross-Platform Support**: Works on macOS, Linux, and Windows with appropriate fallbacks
 
-## Live View and Recording
+### Live View and Recording
 
-The application supports **live view streaming** from Olympus Air cameras, along with the ability to **record video** from the stream.
-
-### Benefits of Live Viewing and Recording
-
-- **Real-Time Composition**: Perfectly frame your shots before capturing
-- **Remote Monitoring**: View the camera feed from a distance using `mplayer`
-- **Video Capture**: Record directly from the camera for documentation or creative use
-- **Low-Latency Feedback**: Instant video stream helps with on-the-fly adjustments
-
-### Technical Details
-
-- **Stream Format**: MJPEG stream used for live viewing
-- **Viewer Integration**: Utilizes `mplayer` for displaying the stream in real time
+- **Stream Format**: MJPEG stream used for live viewing with optimized encoding
+- **Viewer Integration**: Utilizes `mplayer` with performance-optimized parameters
 - **Recording**: Optionally pipe the stream to a file for recording purposes
-- **Fallbacks**: If live view is not supported, defaults to image preview mode
-
-## Prerequisites
-
-- Rust (1.65 or newer)
-- Cargo (included with Rust)
-- Working WiFi connection to an Olympus camera
-- `mplayer` installed for live view and recording
-- macOS, Linux, or Windows
+- **Fallbacks**: Automatic player selection with fallback options (FFplay)
 
 ## Project Structure
 
 ```
 src/
 ├── camera/
-│   ├── mod.rs           # Camera module export
-│   └── olympus.rs       # Olympus camera implementation
-├── main.rs              # Program entry point
+│   ├── client/
+│   │   ├── basic.rs          # Basic HTTP operations
+│   │   ├── error.rs          # Error handling utilities
+│   │   └── mod.rs            # Client module exports
+│   ├── connection/
+│   │   ├── init.rs           # Connection initialization
+│   │   └── mod.rs            # Connection module exports
+│   ├── image/
+│   │   ├── delete.rs         # Image deletion functionality
+│   │   ├── download.rs       # Image download functionality
+│   │   ├── formats.rs        # URL format utilities
+│   │   ├── list.rs           # Image listing functionality
+│   │   └── mod.rs            # Image module exports
+│   ├── mod.rs                # Camera module exports
+│   ├── olympus.rs            # Main Olympus camera implementation
+│   └── photo/
+│       ├── capture.rs        # Photo capture functionality
+│       └── mod.rs            # Photo module exports
+├── main.rs                   # Program entry point
 ├── terminal/
-│   ├── app.rs           # Main application
-│   ├── handlers.rs      # Input handlers
+│   ├── app.rs                # Main application
+│   ├── handlers.rs           # Input handlers
 │   ├── image_viewer/
-│   │   ├── handlers.rs  # Image viewer input handlers
-│   │   ├── mod.rs       # Image viewer module export
-│   │   ├── renderer.rs  # Image viewer UI rendering
-│   │   └── state.rs     # Image viewer state
-│   ├── mod.rs           # Terminal module export
-│   ├── renderer.rs      # UI rendering
-│   ├── state.rs         # Application state
+│   │   ├── display/          # Display method implementations
+│   │   ├── handlers.rs       # Image viewer input handlers
+│   │   ├── mod.rs            # Image viewer module export
+│   │   ├── renderer/         # Advanced rendering components
+│   │   └── state.rs          # Image viewer state
+│   ├── mod.rs                # Terminal module export
+│   ├── renderer.rs           # UI rendering
+│   ├── state.rs              # Application state
 │   └── video_viewer/
-│       ├── handlers.rs  # Video viewer input handlers
-│       ├── mod.rs       # Video viewer module export
-│       ├── olympus_udp.rs # Olympus UDP communication
-│       ├── renderer.rs  # Video viewer UI rendering
-│       └── state.rs     # Video viewer state
+│       ├── handlers.rs       # Video viewer input handlers
+│       ├── mod.rs            # Video viewer module export
+│       ├── olympus_udp.rs    # Optimized UDP communication
+│       ├── renderer.rs       # Video viewer UI rendering
+│       └── state.rs          # Video viewer state
 └── utils/
-    ├── logging.rs       # Logging utilities
-    └── mod.rs           # Utils module export
+    ├── logging.rs            # Enhanced logging utilities
+    └── mod.rs                # Utils module export
 ```
 
 ## Dependencies
 
-- `anyhow` - Error handling
-- `log` & `env_logger` - Logging
-- `reqwest` - HTTP client for camera communication
-- `tui` - Terminal user interface
-- `crossterm` - Terminal manipulation
-- `colored` - Colored terminal output
+- `anyhow` - Comprehensive error handling
+- `log` & `env_logger` - Enhanced logging system
+- `reqwest` - Robust HTTP client for camera communication
+- `tui` - Terminal user interface framework
+- `crossterm` - Cross-platform terminal manipulation
+- `colored` - Terminal color output
 - `regex` - Regular expressions for parsing camera responses
-- `viuer` - Terminal image display
+- `viuer` - Terminal image display engine
 - `termsize` - Terminal size detection
 - `base64` - Encoding/decoding for image transfer
 - `tempfile` - Temporary file handling for image preview
@@ -118,7 +146,7 @@ cd olympus-air-video
 2. Build the project:
 
 ```bash
-cargo build
+cargo build --release
 ```
 
 ## Usage
@@ -128,27 +156,59 @@ First, make sure your Olympus camera is in WiFi mode and your computer is connec
 ### Run the app:
 
 ```bash
-cargo run
+# Standard mode
+./run.sh
+
+# Debug mode with detailed logging
+./run.sh --debug
 ```
 
-### View images from the camera:
+### Using Image Viewer
 
-Use the terminal interface to browse thumbnails and preview images wirelessly.
+Navigate to the "View Images" option in the main menu and press Enter to see the list of images on your camera. Select an image and press Enter to view it.
 
-### Use live view:
+Controls:
 
-Make sure the camera supports live view over MJPEG and run:
+- `+`/`-` - Zoom in/out
+- `0` - Reset zoom
+- `r` - Load higher resolution version
+- `d` - Cycle display methods (for different terminals)
+- `a` - Toggle aspect ratio preservation
+- `Enter` - Display full image using external viewer
+- `Esc` - Return to image list
 
-```bash
-mplayer http://<camera-ip>:<port>/liveview.mjpg
-```
+### Using Live View
 
-Replace `<camera-ip>` and `<port>` with your camera's IP and live view port.
+Navigate to the "Live View" option and press Enter to start the live stream.
 
-### Record the live stream:
+Controls:
 
-```bash
-mplayer -dumpstream -dumpfile output.avi http://<camera-ip>:<port>/liveview.mjpg
-```
+- Arrow keys - Navigate menu
+- Enter - Select option
+- `q` - Quit current mode
+- Esc - Go back to previous screen
 
-This command saves the live stream to `output.avi`.
+### API Exploration
+
+In debug mode, you can use the API exploration feature to diagnose which camera endpoints and URL formats work with your specific camera model:
+
+1. From the image list, press `a` to start API exploration
+2. Check the logs to see which endpoints succeed or fail
+3. Use this information to understand your camera's capabilities
+
+## Troubleshooting
+
+If you encounter issues with image loading (404 or 520 errors):
+
+1. Run in debug mode: `./run.sh --debug`
+2. Use the API exploration feature to determine supported endpoints
+3. Check logs for successful URL formats
+4. Ensure your camera's firmware is up to date
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
