@@ -1,4 +1,5 @@
 // src/terminal/video_viewer/handlers.rs
+use crate::camera::connection::init::ConnectionManager;
 use crate::terminal::state::{AppMode, AppState};
 use crate::terminal::video_viewer::olympus_udp;
 use crate::terminal::video_viewer::state::VideoViewerState;

@@ -1,4 +1,5 @@
 // src/terminal/video_viewer/olympus_udp.rs
+use crate::camera::client::basic::ClientOperations;
 use crate::terminal::video_viewer::state::VideoViewerState;
 use anyhow::{Result, anyhow};
 use log::{debug, error, info, warn};
@@ -386,11 +387,17 @@ fn process_udp_stream(
     let mut first_frame_received = false;
     let mut current_frame_id = 0;
     let mut current_packet_id = 0;
-    let mut jpeg_data = Vec::with_capacity(262144); // larger capacity for better performance
+    let mut jpeg_data = Vec::with_capacity(524288); // larger capacity for better performance
+
+    // And change the capacity threshold check to be more aggressive
+    if jpeg_data.capacity() > 1048576 {
+        // 1MB
+        jpeg_data = Vec::with_capacity(524288); // Resize to 512KB
+    }
 
     // Frame rate control - increased to 30 FPS for smoother video
     let mut last_write_time = Instant::now();
-    let frame_interval = Duration::from_millis(33); // ~30 FPS
+    let frame_interval = Duration::from_millis(16); // ~30 FPS
 
     // Last activity tracking for reconnection
     let mut last_activity = Instant::now();

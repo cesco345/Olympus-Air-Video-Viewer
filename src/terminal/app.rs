@@ -155,7 +155,7 @@ impl App {
                                 // In image viewer mode, use the image viewer renderer
                                 if let Some(viewer_state) = &state.image_viewer {
                                     // Pass the viewer_state, frame, and area to the render function
-                                    image_viewer::renderer::render(viewer_state, f, size);
+                                    image_viewer::renderer::ui::render(viewer_state, f, size);
                                 }
                             }
                             crate::terminal::state::AppMode::ViewingVideo => {

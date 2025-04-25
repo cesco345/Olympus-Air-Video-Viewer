@@ -1,2 +1,2 @@
-2025-04-24 11:49:51.860 mplayer[40307:17784733] +[IMKClient subclass]: chose IMKClient_Modern
-2025-04-24 11:49:51.860 mplayer[40307:17784733] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+2025-04-24 22:25:50.127 mplayer[77463:18189101] +[IMKClient subclass]: chose IMKClient_Modern
+2025-04-24 22:25:50.128 mplayer[77463:18189101] +[IMKInputSession subclass]: chose IMKInputSession_Modern

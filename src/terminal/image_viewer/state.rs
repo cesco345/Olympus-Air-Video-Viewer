@@ -22,6 +22,23 @@ impl Default for DisplayMethod {
     }
 }
 
+/// Available resolution levels for images
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub enum ResolutionLevel {
+    /// Low resolution (thumbnail)
+    Low,
+    /// Medium resolution
+    Medium,
+    /// High/full resolution
+    High,
+}
+
+impl Default for ResolutionLevel {
+    fn default() -> Self {
+        ResolutionLevel::Low
+    }
+}
+
 /// State for the image viewer mode
 pub struct ImageViewerState {
     /// Path to the image file
@@ -38,6 +55,18 @@ pub struct ImageViewerState {
 
     /// Preferred display method
     pub display_method: DisplayMethod,
+
+    /// Current resolution level
+    pub resolution_level: ResolutionLevel,
+
+    /// Original image URL for fetching higher resolution
+    pub original_url: Option<String>,
+
+    /// Flag to indicate if higher resolution is being loaded
+    pub is_high_res_loading: bool,
+
+    /// Higher resolution image data
+    pub high_res_data: Option<Vec<u8>>,
 }
 
 impl ImageViewerState {
@@ -49,6 +78,29 @@ impl ImageViewerState {
             zoom_factor: 1.0,
             preserve_aspect: true,
             display_method: DisplayMethod::default(),
+            resolution_level: ResolutionLevel::default(),
+            original_url: None,
+            is_high_res_loading: false,
+            high_res_data: None,
+        }
+    }
+
+    /// Create a new image viewer state with original URL for higher resolution fetching
+    pub fn with_original_url(
+        image_path: PathBuf,
+        image_name: &str,
+        original_url: Option<String>,
+    ) -> Self {
+        Self {
+            image_path,
+            image_name: image_name.to_string(),
+            zoom_factor: 1.0,
+            preserve_aspect: true,
+            display_method: DisplayMethod::default(),
+            resolution_level: ResolutionLevel::default(),
+            original_url,
+            is_high_res_loading: false,
+            high_res_data: None,
         }
     }
 
@@ -64,6 +116,10 @@ impl ImageViewerState {
             zoom_factor: 1.0,
             preserve_aspect: true,
             display_method: method,
+            resolution_level: ResolutionLevel::default(),
+            original_url: None,
+            is_high_res_loading: false,
+            high_res_data: None,
         }
     }
 
@@ -113,6 +169,35 @@ impl ImageViewerState {
             DisplayMethod::Sixel => "SIXEL",
             DisplayMethod::Basic => "Basic",
         }
+    }
+
+    /// Get resolution level name as string
+    pub fn get_resolution_name(&self) -> &'static str {
+        match self.resolution_level {
+            ResolutionLevel::Low => "Low",
+            ResolutionLevel::Medium => "Medium",
+            ResolutionLevel::High => "High",
+        }
+    }
+
+    /// Increase the resolution level
+    pub fn increase_resolution(&mut self) -> bool {
+        match self.resolution_level {
+            ResolutionLevel::Low => {
+                self.resolution_level = ResolutionLevel::Medium;
+                true
+            }
+            ResolutionLevel::Medium => {
+                self.resolution_level = ResolutionLevel::High;
+                true
+            }
+            ResolutionLevel::High => false,
+        }
+    }
+
+    /// Check if resolution can be increased
+    pub fn can_increase_resolution(&self) -> bool {
+        self.resolution_level != ResolutionLevel::High && self.original_url.is_some()
     }
 
     /// Calculate dimensions for display based on zoom factor
